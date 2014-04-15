@@ -1,0 +1,20 @@
+{
+    "name": "jleagle/php-btn",
+    "keywords": ["btn", "broadcast the net"],
+    "authors": [
+        {
+            "name": "James Eagle",
+            "email": "jimeagle@gmail.com",
+            "homepage": "http://jimeagle.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Jleagle\\PHPBTN": "src"
+        }
+    }
+    "require": {
+        "jsonrpc/jsonrpc": "1.0.*"
+    }
+}

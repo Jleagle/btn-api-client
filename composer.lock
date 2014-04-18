@@ -3,50 +3,43 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "777a4311c9ba332c642d288908d4f295",
+    "hash": "b727d13bc05c56a3521167741183a503",
     "packages": [
         {
-            "name": "jsonrpc/jsonrpc",
-            "version": "v1.0.3",
+            "name": "jleagle/json-rpc",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/johnstevenson/jsonrpc.git",
-                "reference": "0fcc660ca211a871fe656066e8921406a4c3a2ae"
+                "url": "https://github.com/Jleagle/json-rpc.git",
+                "reference": "62fa5817c1335a94f35f13a8402ddbbab1ae39d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnstevenson/jsonrpc/zipball/0fcc660ca211a871fe656066e8921406a4c3a2ae",
-                "reference": "0fcc660ca211a871fe656066e8921406a4c3a2ae",
+                "url": "https://api.github.com/repos/Jleagle/json-rpc/zipball/62fa5817c1335a94f35f13a8402ddbbab1ae39d9",
+                "reference": "62fa5817c1335a94f35f13a8402ddbbab1ae39d9",
                 "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
             },
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "JsonRpc": "src/"
+                    "Jleagle\\jsonRPC": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
             "authors": [
                 {
-                    "name": "John Stevenson",
-                    "email": "john-stevenson@blueyonder.co.uk"
+                    "name": "James Eagle",
+                    "email": "jimeagle@gmail.com",
+                    "homepage": "http://jimeagle.com",
+                    "role": "Developer"
                 }
             ],
-            "description": "JSON-RPC 2.0 client/server implementation",
-            "homepage": "http://github.com/johnstevenson/jsonrpc",
             "keywords": [
-                "api",
                 "json",
-                "json-rpc",
+                "jsonrpcphp",
                 "rpc"
             ],
-            "time": "2012-11-30 21:43:30"
+            "time": "2014-04-18 01:19:25"
         }
     ],
     "packages-dev": [
@@ -56,9 +49,9 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "jleagle/json-rpc": 20
+    },
     "platform": [
 
     ],

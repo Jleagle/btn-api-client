@@ -1,10 +1,13 @@
 <?php
 namespace Jleagle\PHPBTN;
 
+use Jleagle\jsonRPC\jsonRPCClient;
+
 class PHPBTN
 {
 
     private $apiKey;
+    private $apiUrl = 'http://api.btnapps.net/';
     private $methods = array(
         "userInfo",
         "getChangelog",
@@ -19,8 +22,8 @@ class PHPBTN
         "sendInboxConversation",
         "getSchedule",
         "getNewSeries",
-        "getTorrentsBrowse",
-        "getTorrentsSearch",
+        // "getTorrentsBrowse",
+        // "getTorrentsSearch",
         "getTorrents",
         "getTorrentsUrl",
         "getForumsIndex",
@@ -30,8 +33,6 @@ class PHPBTN
         "getUserSnatchlist",
         "getUserStats"
     );
-
-    private $apiUrl = 'http://api.btnapps.net/';
 
     public function __construct($apiKey)
     {
@@ -44,11 +45,18 @@ class PHPBTN
         if (!in_array($method, $this->methods)){
             throw new \Exception('Invalid method.');
         }
+        $args = func_get_args();
+        if (count($args[1]) > 3){
+            throw new \Exception('Too many parameters, you do not need to enter a key.');
+        }
 
-//        print_r($parameters);
+        $parameters[0] = (isset($parameters[0])?$parameters[0]:false);
+        $parameters[1] = (isset($parameters[1])?$parameters[1]:false);
+        $parameters[2] = (isset($parameters[2])?$parameters[2]:false);
 
-        $client = new \JsonRpc\Client($this->apiUrl);
-        return $client->{$method}($this->apiKey, array($parameters));
+        $json = new jsonRPCClient($this->apiUrl);
+        return $json->{$method}($this->apiKey, $parameters[0], $parameters[1], $parameters[2]);
+
     }
 
 }

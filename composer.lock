@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jleagle/json-rpc.git",
-                "reference": "62fa5817c1335a94f35f13a8402ddbbab1ae39d9"
+                "reference": "7e673d760c03197b6624c868a81b67cc896f2b00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jleagle/json-rpc/zipball/62fa5817c1335a94f35f13a8402ddbbab1ae39d9",
-                "reference": "62fa5817c1335a94f35f13a8402ddbbab1ae39d9",
+                "url": "https://api.github.com/repos/Jleagle/json-rpc/zipball/7e673d760c03197b6624c868a81b67cc896f2b00",
+                "reference": "7e673d760c03197b6624c868a81b67cc896f2b00",
                 "shasum": ""
             },
             "type": "library",
@@ -34,12 +34,14 @@
                     "role": "Developer"
                 }
             ],
+            "description": "The classes from json-rpc.org converted into a composer package.",
             "keywords": [
                 "json",
+                "json-rpc",
                 "jsonrpcphp",
                 "rpc"
             ],
-            "time": "2014-04-18 01:19:25"
+            "time": "2014-04-23 20:32:01"
         }
     ],
     "packages-dev": [

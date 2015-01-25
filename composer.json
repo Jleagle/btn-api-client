@@ -1,21 +1,20 @@
 {
-    "name": "jleagle/btn-api-client",
-    "keywords": ["btn", "broadcast the net"],
-    "authors": [
-        {
-            "name": "James Eagle",
-            "email": "jimeagle@gmail.com",
-            "homepage": "http://jimeagle.com",
-            "role": "Developer"
-        }
-    ],
-    "autoload": {
-        "psr-0": {
-            "Jleagle\\PHPBTN": "src"
-        }
-    },
-    "minimum-stability": "dev",
-    "require": {
-        "jleagle/json-rpc": "dev-master"
+  "name": "jleagle/btn-api-client",
+  "keywords": [
+    "btn",
+    "broadcast the net"
+  ],
+  "description": "A wrapper class for the BTN API",
+  "authors": [
+    {
+      "name": "James Eagle",
+      "email": "jimeagle@gmail.com",
+      "homepage": "http://jimeagle.com"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Jleagle\\BTN\\": "src/"
+    }
+  }
 }

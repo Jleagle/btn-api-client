@@ -21,7 +21,7 @@ along with JSON-RPC PHP; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-namespace Jleagle\BTN\Libs;
+namespace Jleagle\Btn\Libs;
 
 /**
  * This class build a json-RPC Server 1.0
@@ -29,7 +29,7 @@ namespace Jleagle\BTN\Libs;
  *
  * @author sergio <jsonrpcphp@inservibile.org>
  */
-class jsonRPCServer
+class JsonRPCServer
 {
   /**
    * This function handle a request binding it to a given object

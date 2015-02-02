@@ -4,7 +4,7 @@
     "btn",
     "broadcast the net"
   ],
-  "description": "A wrapper class for the BTN API",
+  "description": "A helper class to access data from the BTN API",
   "authors": [
     {
       "name": "James Eagle",
@@ -14,7 +14,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Jleagle\\BTN\\": "src/"
+      "Jleagle\\Btn\\": "src/"
     }
   }
 }

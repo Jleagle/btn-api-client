@@ -1,13 +1,13 @@
 <?php
 namespace Jleagle\Btn;
 
-use Jleagle\Btn\Libs\JsonRPCClient;
+use JsonRPC\Client;
 
 class Btn
 {
   const API_PATH = 'http://api.btnapps.net/';
 
-  private $_key;
+  protected $_key;
 
   /**
    * @param $apiKey
@@ -239,10 +239,10 @@ class Btn
     return $this->_call('getUserStats');
   }
 
-  private function _call($method, $params = [])
+  protected function _call($method, $params = [])
   {
     array_unshift($params, $this->_key);
-    $json = new JsonRPCClient(self::API_PATH);
-    return call_user_func_array([$json, $method], $params);
+    $client = new Client(self::API_PATH);
+    return $client->execute($method, $params);
   }
 }

@@ -16,5 +16,9 @@
     "psr-4": {
       "Jleagle\\Btn\\": "src/"
     }
+  },
+  "require": {
+    "php": ">=5.4",
+    "fguillot/json-rpc": "~1.0"
   }
 }
